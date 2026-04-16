@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* TinyMCE ke liye pixel-perfect styling */
+    .report-card {
+        width: 800px;
+        margin: auto;
+        border: 2px solid #000;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+    
+    .header-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+    }
+    
+    .school-name {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0;
+        color: #000;
+    }
+    
+    .school-details {
+        font-size: 13px;
+        margin: 2px 0;
+    }
+
+    .info-table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    .info-table td {
+        padding: 8px 5px;
+        vertical-align: bottom;
+    }
+
+    .data-underline {
+        border-bottom: 1px solid #000;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .label {
+        font-weight: normal;
+        width: 120px;
+    }
+
+    .marks-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .marks-table th, .marks-table td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    .marks-table th {
+        background-color: #f2f2f2;
+    }
+    .text-left {
+        text-align: left;
+    }
+    .title-bar {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+
+   /* Naye Grades aur Skills Sections ke liye styles */
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 12px;
+        border: 1px solid #000;
+    }
+    .skills-table th, .skills-table td {
+        border: 1px solid #000;
+        padding: 5px;
+        text-align: left;
+    }
+    .skills-table th {
+        background-color: #f2f2f2;
+        text-align: center;
+    }
+    .grade-cell {
+        text-align: center;
+        width: 50px;
+        font-weight: bold;
+    }
+    .remark-box {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 13px;
+        border-top: 2px solid #000;
+        padding-top: 10px;
+    }
+    .remark-label {
+        font-weight: normal;
+        margin-right: 15px;
+    }
+    .remark-text {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .attendance-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .attendance-table td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    .signature-section {
+        width: 100%;
+        margin-top: 40px; /* Signatures ke liye thodi jagah chodi hai */
+        border-collapse: collapse;
+    }
+    .signature-section td {
+        font-size: 11px;
+        text-align: center;
+        vertical-align: bottom;
+        padding-bottom: 5px;
+        width: 25%;
+    }
+    .sign-line {
+        border-top: 1px solid #000;
+        margin: 0 10px;
+        padding-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="report-card">
+    <table class="header-table">
+        <tr>
+            <td width="100" align="left">
+    <div style="width: 80px; height: 80px; border: 2px solid #000; border-radius: 50%; background-color: #f9f9f9; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: auto;">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+        <div style="position: absolute; bottom: 8px; width: 100%; text-align: center; font-size: 8px; font-weight: bold; font-family: Arial;">SXHS</div>
+    </div>
+</td>
+            <td align="center">
+                <h1 class="school-name">St. Xavier's High School</h1>
+                <p class="school-details">Co-ed English Medium School (CBSE Pattern)</p>
+                <p class="school-details">Gandhi Chhak, Municipality Road, Choudwar - 754025</p>
+                <p class="school-details">Mob: +91-9937240760 | Email: sxhschoudwar@gmail.com</p>
+            </td>
+            <td width="100"></td> </tr>
+    </table>
+
+    <table class="info-table">
+        <tr>
+            <td class="label">Name</td>
+            <td class="data-underline" width="35%">MANAV MOHAKUL</td>
+            <td class="label" style="padding-left: 20px;">Adm No</td>
+            <td class="data-underline">74</td>
+        </tr>
+        <tr>
+            <td class="label">Class & Section</td>
+            <td class="data-underline">V A</td>
+            <td class="label" style="padding-left: 20px;">D.O.B</td>
+            <td class="data-underline">05-06-2014</td>
+        </tr>
+        <tr>
+            <td class="label">Father's Name</td>
+            <td class="data-underline">BISWAJIT MOHAKUL</td>
+            <td class="label" style="padding-left: 20px;">Mother's Name</td>
+            <td class="data-underline">PURNIMA MOHAKUL</td>
+        </tr>
+    </table>
+
+    <div class="title-bar">ACADEMIC PERFORMANCE REPORT (ANNUAL 2024-25)</div>
+    
+    <table class="marks-table">
+        <thead>
+            <tr>
+                <th rowspan="2">SUBJECTS</th>
+                <th>P.A (5)</th>
+                <th>*MA (5)</th>
+                <th>Portfolio (5)</th>
+                <th>*SEA (5)</th>
+                <th>Annual (20)</th>
+                <th>Total</th>
+                <th>Mid Term (50)</th>
+                <th>Total (100)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-left">ENGLISH</td>
+                <td>2.5</td> <td>4</td> <td>4</td> <td>4</td> <td>5.5</td> <td>20</td> <td>21.5</td> <td>41.5</td>
+            </tr>
+            <tr>
+                <td class="text-left">HINDI</td>
+                <td>AB</td> <td>5</td> <td>5</td> <td>5</td> <td>7.5</td> <td>22.5</td> <td>28</td> <td>50.5</td>
+            </tr>
+            <tr>
+                <td class="text-left">MATH</td>
+                <td>2.25</td> <td>5</td> <td>5</td> <td>5</td> <td>17.25</td> <td>34.5</td> <td>32</td> <td>66.5</td>
+            </tr>
+            <tr>
+                <td class="text-left">ODIA</td>
+                <td>3</td> <td>4</td> <td>4</td> <td>5</td> <td>11.75</td> <td>27.75</td> <td>26</td> <td>53.75</td>
+            </tr>
+            <tr>
+                <td class="text-left">SCIENCE</td>
+                <td>1.75</td> <td>4</td> <td>4</td> <td>4</td> <td>11.25</td> <td>25</td> <td>36.75</td> <td>61.75</td>
+            </tr>
+            <tr>
+                <td class="text-left">SST</td>
+                <td>3.5</td> <td>5</td> <td>5</td> <td>5</td> <td>13.5</td> <td>32</td> <td>32.5</td> <td>64.5</td>
+            </tr>
+            <tr style="font-weight: bold;">
+                <td colspan="8" style="text-align: right;">GRAND TOTAL (600)</td>
+                <td>338.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="skills-table">
+        <thead>
+            <tr>
+                <th>Additional Subjects</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>COMPUTER</td><td class="grade-cell">A</td></tr>
+            <tr><td>GK</td><td class="grade-cell">B</td></tr>
+            <tr><td>VED</td><td class="grade-cell">B</td></tr>
+            <tr><td>DRAWING</td><td class="grade-cell">A</td></tr>
+        </tbody>
+    </table>
+
+    <table class="skills-table">
+        <thead>
+            <tr>
+                <th>Co-scholastic Activities</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Punctuality</td><td class="grade-cell">A</td></tr>
+            <tr><td>Discipline</td><td class="grade-cell">A</td></tr>
+            <tr><td>Sense of Responsibility</td><td class="grade-cell">A</td></tr>
+            <tr><td>Honesty</td><td class="grade-cell">A</td></tr>
+        </tbody>
+    </table>
+
+    <table class="skills-table">
+        <thead>
+            <tr>
+                <th>Intellectual/Social Skills</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Social Skill</td><td class="grade-cell">A</td></tr>
+            <tr><td>Emotional Skill</td><td class="grade-cell">A</td></tr>
+            <tr><td>Physical Skill</td><td class="grade-cell">A</td></tr>
+        </tbody>
+    </table>
+
+    <table class="skills-table">
+        <thead>
+            <tr>
+                <th>Physical Fitness</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Sports/Games</td><td class="grade-cell">A</td></tr>
+        </tbody>
+    </table>
+
+    <div class="remark-box">
+        <span class="remark-label">Teacher's Remark</span>
+        <span class="remark-text">WORK HARD PROMOTED TO STD VI</span>
+    </div>
+
+
+    <table class="attendance-table">
+        <tr>
+            <td width="20%">Attendance</td>
+            <td width="20%">Total Working Days</td>
+            <td width="10%" align="center">104</td>
+            <td width="15%">Present</td>
+            <td width="10%" align="center">91</td>
+            <td width="15%">Percentage</td>
+            <td width="10%" align="center">88</td>
+        </tr>
+    </table>
+
+    <table class="signature-section">
+        <tr>
+            <td>
+                <div style="margin-bottom: 10px;"><img src="sign1.png" style="width: 60px; height: auto; display: block; margin: auto;"></div>
+                <div class="sign-line">Class Teacher Sign</div>
+            </td>
+            <td>
+                <div style="margin-bottom: 10px;"><img src="sign2.png" style="width: 60px; height: auto; display: block; margin: auto;"></div>
+                <div class="sign-line">Exam In-charge</div>
+            </td>
+            <td>
+                <div style="margin-bottom: 10px; height: 30px;"></div> <div class="sign-line">Parent Sign</div>
+            </td>
+            <td>
+                <div style="margin-bottom: 10px;"><img src="sign3.png" style="width: 60px; height: auto; display: block; margin: auto;"></div>
+                <div class="sign-line">Academic Co-ordinator</div>
+            </td>
+        </tr>
+    </table>
+
+    </div>
+
+</body>
+</html>
